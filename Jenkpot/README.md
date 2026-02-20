@@ -193,7 +193,7 @@ Vulnerability: CVE-2025-32433 (Erlang OTP SSH RCE)
 
 **PoC Discovery:**
 
-cloned git hub repo https://github.com/omer-efe-curkus/CVE-2025-32433-Erlang-OTP-SSH-RCE-PoC
+cloned github repo https://github.com/omer-efe-curkus/CVE-2025-32433-Erlang-OTP-SSH-RCE-PoC
 
 ![photo_2026-02-19_05-08-33.jpg](./screenshots/photo_2026-02-19_05-08-33.jpg)
 
@@ -249,7 +249,7 @@ cat /root/root.txt
 
 ### Not established (out of scope for CTF environment).
 
-`Findings Summary
+Findings Summary
 
 |            Vulnerability         | Severity | CVSS|               Impact                   |
 |----------------------------------|----------|-----|----------------------------------------|
@@ -260,17 +260,17 @@ cat /root/root.txt
 Attack Chain Visualization
 
 1. Reconnaissance (Nmap) → Identified Jenkins on port 8080
-                                               ↓
+                            ↓
 2. Brute Force Attack → Weak credentials discovered (admin:jenkins)
-                                               ↓
+                            ↓
 3. Jenkins Access → Authenticated to Jenkins web interface
-                                               ↓
+                            ↓
 4. RCE via Script Console → Groovy payload executed
-                                               ↓
+                            ↓
 5. Reverse Shell → Shell as 'jenkins' user established
-                                               ↓
+                            ↓
 6. Local Enumeration → Discovered Erlang SSH on port 2222
-                                               ↓
+                            ↓
 7. CVE-2025-32433 Exploit → Exploited SSH vulnerability
-                                               ↓
+                            ↓
 8. ROOT ACCESS → Complete system compromise
