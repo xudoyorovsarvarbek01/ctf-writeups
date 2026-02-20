@@ -9,6 +9,7 @@
 **Operating System:** Linux (Ubuntu)
 
 **Date:** 19.02.2026
+**Notion link:** [link](https://www.notion.so/Jenkins-30c74f42110180ef8885eac6d4249fcb?source=copy_link)
 
 ---
 
