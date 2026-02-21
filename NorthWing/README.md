@@ -12,6 +12,8 @@
 
 **Date:** 21.02.2026
 
+**Notion link:** [link](https://www.notion.so/Northwing-30e74f42110180868b06f43bc2717d8f?source=copy_link)
+
 ---
 
 ## Executive Summary
@@ -98,7 +100,7 @@ Basic LFI payload to read `/etc/passwd`:
 http://10.0.2.43/index.php?page=../../../../etc/passwd
 ```
 
-**Result:** File contents error 403 Unauthorized Access
+**Result:** error 403 Unauthorized Access
 
 ![Screenshot_2026-02-21_03-43-21.png](./screenshots/Screenshot_2026-02-21_03-43-21.png)
 
