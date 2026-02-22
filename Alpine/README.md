@@ -312,7 +312,9 @@ ls -la
 
 ### Exploitation Strategy
 
-**Method 1: Reverse Shell Injection**
+This one was a bit tricky to escalate with SUID but i managed with reverse shell
+
+**Reverse Shell Injection**
 
 Setting up listener on attacking machine:
 
