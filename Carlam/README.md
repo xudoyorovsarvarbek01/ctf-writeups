@@ -6,7 +6,7 @@
 
 **Difficulty:** Easy/Medium
 
-**IP Address:** 10.111.170.213 ****
+**IP Address:** 10.111.170.213
 
 **Operating System:** Alpine Linux v3.8
 
