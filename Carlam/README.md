@@ -87,7 +87,6 @@ This confirmed the target machine would be located within the same /24 subnet.
 
 Network sweep performed to identify active hosts:
 
-bash
 
 ```bash
 nmap -sn 192.168.100.0/24
@@ -99,7 +98,7 @@ nmap -sn 192.168.100.0/24
 sudo netdiscover -r 10.111.170.0/24
 ```
 
-Show Image
+
 
 **Discovery Results:**
 
@@ -393,7 +392,7 @@ for pwd in sorted(final):
 python3 wordlist_generator.py > carlamm.txt
 ```
 
-Show Image
+
 
 **Wordlist Statistics:**
 
@@ -759,7 +758,7 @@ sudo iftop
 
 Press `!` key within iftop interface
 
-Show Image
+
 
 **Step 3: Spawn Root Shell**
 
