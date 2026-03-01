@@ -94,7 +94,7 @@ I find credentials stored in a variable 
 
 ### Sudo
 
-Checking privileges using [sudo](https://linux.die.net/man/8/sudo) prompts for a *password*
+Checking privileges using sudo prompts for a *password*
 
 ```bash
 sudo -l
@@ -103,7 +103,7 @@ sudo -l
 
 ### Credential Reuse
 
-The **user** **`microjoan`** can run the jshell**`root`** binary using sudo
+The **user** **`microjoan`** can run the jshell **`root`** binary using sudo
 
 `Matching Defaults entries for microjoan on blind:
     env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
