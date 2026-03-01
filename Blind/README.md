@@ -33,7 +33,7 @@ In the initial [nmap](https://nmap.org/) scan, the path in the *disallowed*�
 
 ### Site (/dnsrecon-gui)
 
-The website contains DNSrecon-gui , which is simply dnsrecon with a graphical interface implemented in [PHP](https://www.php.net/) .
+The website contains DNSrecon-gui , which is simply dnsrecon with a graphical interface implemented in PHP
 
 ![](./screenshots/image%20(1).png)
 
