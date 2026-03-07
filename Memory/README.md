@@ -16,7 +16,7 @@
 
 ## Executive Summary
 
-Successfully compromised the Memory machine through an exposed Memcached service containing plaintext credentials, followed by privilege escalation via sudo misconfiguration allowing file transfer of root's SSH private key. Complete system compromise achieved in approximately 30 minutes.
+Successfully compromised the Memory machine through an exposed Memcached service containing plaintext credentials, followed by privilege escalation via sudo misconfiguration allowing file transfer of root's SSH private key.
 
 **Attack Path:**
 Memcached enumeration → Plaintext password discovery → SSH brute force → Sudo wormhole exploitation → Root SSH key exfiltration → Root access
