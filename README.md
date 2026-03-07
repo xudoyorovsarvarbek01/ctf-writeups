@@ -8,7 +8,7 @@ My penetration testing writeups and CTF solutions.
 |-|---------|------------|----------|------|---------|
 |1| Mailforge | Easy | Vulnyx | 2026-02-02 | [Link](./Mailforge/) |
 |2| Blind | Easy | Vulnyx | 2026-02-08 | [Link](./Blind/) |
-|3| Jenkpot | Easy | HAAD | 2026-02-19 | [Link](./Jenkpot/) |
+|3| Jenkpot | Easy | HAAD TC | 2026-02-19 | [Link](./Jenkpot/) |
 |4| NorthWing | Easy | Vulnyx | 2026-02-21 | [Link](./NorthWing/) |
 |5| Alpine | Easy | Vulnyx | 2026-02-22 | [Link](./Alpine/) |
 |6| Carlam | Easy/Medium | Vulnyx | 2026-02-23 | [Link](./Carlam/) |
