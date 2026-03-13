@@ -13,7 +13,8 @@ My penetration testing writeups and CTF solutions.
 |5| Alpine | Easy | Vulnyx | 2026-02-22 | [Link](./Alpine/) |
 |6| Carlam | Easy/Medium | Vulnyx | 2026-02-23 | [Link](./Carlam/) |
 |7| Memory | Easy | Vulnyx | 2026-03-06 | [Link](./Memory/) |
-|7| Care | Easy/Medium | Vulnyx | 2026-03-07  | [Link](./Care/) |
+|8| Care | Easy/Medium | Vulnyx | 2026-03-07  | [Link](./Care/) |
+|9| Cerlyn | Easy/Medium | Vulnyx | 2026-03-07  | [Link](./Cerlyn/) |
 
 
 ## Skills Demonstrated
