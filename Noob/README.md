@@ -6,7 +6,7 @@
 
 **IP Address:** 10.13.0.151
 
-**Operating System:** Linux (Debian)
+**Operating System:** Linux
 
 **Date:** March 13, 2026
 
