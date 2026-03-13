@@ -14,7 +14,8 @@ My penetration testing writeups and CTF solutions.
 |6| Carlam | Easy/Medium | Vulnyx | 2026-02-23 | [Link](./Carlam/) |
 |7| Memory | Easy | Vulnyx | 2026-03-06 | [Link](./Memory/) |
 |8| Care | Easy/Medium | Vulnyx | 2026-03-07  | [Link](./Care/) |
-|9| Cerlyn | Easy/Medium | Vulnyx | 2026-03-07  | [Link](./Cerlyn/) |
+|9| Cerlyn | Easy/Medium | HAAD TC | 2026-11-07  | [Link](./Cerlyn/) |
+|10| Noob | Low | Vulnyx | 2026-13-07  | [Link](./Noob/) |
 
 
 ## Skills Demonstrated
