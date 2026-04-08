@@ -18,7 +18,7 @@ My penetration testing writeups and CTF solutions.
 |10| Noob | Linux | Easy | Vulnyx | 2026-03-29  | [Link](./Noob/) |
 |11| Noob | Linux | Low | Vulnyx | 2026-03-13  | [Link](./Noob/) |
 |12| BlackPearl | Linux | Medium | HAAD TC | 2026-04-05  | [Link](./BlackPearl/) |
-|13| UniTech | Linux | Easy/Medium | HAAD TC | 2026-07-05  | [Link](./UniTech/) |
+|13| UniTech | Linux | Easy/Medium | HAAD TC | 2026-04-07  | [Link](./UniTech/) |
 
 
 ## Skills Demonstrated
