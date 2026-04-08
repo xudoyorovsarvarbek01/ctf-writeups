@@ -4,7 +4,7 @@ My penetration testing writeups and CTF solutions.
 
 ## Machines
 
-|#| Machine |  | Difficulty | Platform | Date | Writeup |
+|#| Machine | OS | Difficulty | Platform | Date | Writeup |
 |-|---------|-----|------------|----------|------|---------|
 |1| Mailforge | Linux | Easy | Vulnyx | 2026-02-02 | [Link](./Mailforge/) |
 |2| Blind | Linux | Easy | Vulnyx | 2026-02-08 | [Link](./Blind/) |
